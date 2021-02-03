@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Home</title>
+</head>
+<body>
+     <h1>Welcome to Vijayant's Prediction Page</h1>
+
+     <form enctype="multipart/form-data" action="imageupload/imageprocess" method="POST" >
+     	{% csrf_token %}
+     	{{ form.as_p }}
+     	<input id="img" type="file" name="Inputimage">
+     	<input type="submit" value="Submit">
+     </form>
+</body>
+</html>

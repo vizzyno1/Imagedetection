@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+</head>
+<body>
+    <h1>This is the Result page</h1>
+    
+    <h1>Predictions of the Input Image is {{a}}</h1>
+    {% for r,p in res %}
+        {{r}} {{p}}%<br/>
+    {% endfor %}
+</body>
+</html>
